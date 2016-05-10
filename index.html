@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style/css/index.css">
+    <title>test</title>
+</head>
+<body>
+    <div van-loading="global" class="container-fluid height-inherit">
+        <div class="row height-inherit">
+            <div class="no-padding">
+                <div class="height-inherit">
+                    <div class="nav">
+                        <h3>
+                            angular笔记
+                        </h3>
+                        <ul>
+                            <li><a href="">ng-bind-html与$sce服务</a></li>
+                        </ul>
+                    </div>
+
+                    <div ng-view class="height-inherit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div van-alert></div>
+    <div van-confirm></div>
+    <div van-check-password></div>
+    <script data-main="main.js" src="libs/require.js"></script>
+</body>
+</html>

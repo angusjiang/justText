@@ -1,0 +1,47 @@
+[van-loading] {
+    position: relative;
+}
+
+.van-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+}
+
+.van-loading:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.van-loading.van-loading-active {
+    display: block;
+}
+
+.van-loading.van-loading-overlay {
+    background-color: rgba(255, 255, 255, .7);
+    z-index: 9999;
+}
+
+.van-loading > .van-loading-body {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+
+.van-loading > .van-loading-body > .van-loading-spinner {
+    position: relative;
+}
+
+.van-loading > .van-loading-body > .van-loading-text {
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+    font-size: 11px;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+}
