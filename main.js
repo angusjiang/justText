@@ -13,6 +13,7 @@ require.config({
         'sm':'http://g.alicdn.com/msui/sm/0.6.2/js/sm',
         'extend':'http://g.alicdn.com/msui/sm/0.6.2/js/sm-extend'
 	},
+	
 	shim:{  //配置不兼容AMD规范的模块
 		'angular':{
             deps:['jquery'], //deps 表示模块的依赖性

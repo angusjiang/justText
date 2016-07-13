@@ -11,17 +11,21 @@
     <div van-loading="global" class="container-fluid height-inherit">
         <div class="row height-inherit">
             <div class="no-padding">
-                <div class="height-inherit">
-                    <div class="nav">
-                        <h3>
-                            angular笔记
-                        </h3>
+                <h3 style="text-align:center;">angular笔记1</h3>
+                <div class="clearfix">
+                    <a href="#/home" class="back-home fr">返回首页</a>
+                </div>
+                <p>  </p>
+                <div class="height-inherit clearfix">
+                    
+                    <div class="nav fl">
                         <ul>
-                            <li><a href="">ng-bind-html与$sce服务</a></li>
+                            <li><a href="#/sce">ng-bind-html与$sce服务</a></li>
+                            <li><a href="#/ngR-ngM">ng-repeat下使用ng-model</a></li>
+                            <li><a href="#/trackByIndex">ng-repeat下使用track by $index</a></li>
                         </ul>
                     </div>
-
-                    <div ng-view class="height-inherit">
+                    <div ng-view class="height-inherit main fl">
                     </div>
                 </div>
             </div>

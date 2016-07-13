@@ -8,14 +8,26 @@ define(['angularAMD', 'angular-route'], function(angularAMD){
             controllerUrl: 'controllers/home-controller',
             navTab: 'home'
         }))
-        .when('/next', angularAMD.route({
-            templateUrl: 'view/next.html',
-            controller: 'nextController',
-            controllerUrl: 'controllers/next-controller',
-            navTab: 'next'
+        .when('/ngR-ngM', angularAMD.route({
+            templateUrl: 'view/ngR-ngM.html',
+            controller: 'ngR-ngM',
+            controllerUrl: 'controllers/ngR-ngM',
+            navTab: 'ngR-ngM'
+        }))
+        .when('/sce',angularAMD.route({
+            templateUrl: 'view/sce.html',
+            controller: 'sce',
+            controllerUrl: 'controllers/sce',
+            navTab: 'sce'
+        }))
+        .when('/trackByIndex',angularAMD.route({
+            templateUrl:'view/trackMyIndex.html',
+            controller:'trackByIndex',
+            controllerUrl:'controllers/trackByIndex',
+            navTab:'trackByIndex'
         }))
         .otherwise({
-            redirectTo: '/index'
+            redirectTo: '/home'
         });
     }]);
     //监听路由

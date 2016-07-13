@@ -1,9 +1,16 @@
 *{margin:0;padding:0;}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.4rem;
+}
 li{
 	list-style: none;
 }
 a{
 	text-decoration: none;
+	color: none;
 }
 .clearfix{
 	zoom:1;
@@ -12,11 +19,44 @@ a{
 	height:0;
 	clear: both;
 	overflow: hidden;
-	content: '.',
+	content: '.';
+	display:block;
+
 }
 .fl{
 	float: left;
 }
 .fr{
 	float: right;
+}
+.back-home{
+	width:5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: #000;
+	text-align: center;
+	padding:0.5rem;
+	color: #fff;
+}
+.nav{
+	width:30%;
+	margin-right: 2%;
+	padding:1%;
+	height: 100%;
+	li{
+		height: 2rem;
+		line-height: 2rem;
+		font-size: 1.6rem;
+	}
+}
+.border-radius(@rad:5px){
+	border-radius: @rad;
+	-webkit-border-radius:@rad;
+	-moz-border-radius:@rad;
+	-o-border-radius:@rad;
+}
+.main{
+	padding:2%;
+	width:60%;
+	.border-radius(20px);
 }

@@ -1,0 +1,13 @@
+<div class="ng-bind-html_sce sce">
+	<pre>
+	define(['app'], function(app){
+	    app.filter('htmlFilter', ['$sce', function ($sce) {
+	        return function (text) {
+	            return $sce.trustAsHtml(text);
+	        };
+	    }]);
+	});
+	</pre>
+	<div ng-bind-html="thisHtml"></div>
+	<div ng-bind-html="thisHtml2 | htmlFilter"></div>
+</div>

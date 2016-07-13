@@ -1,0 +1,25 @@
+<div class="contentMain  ngR-ngM">
+	<p ng-cloak>{{test}}</p>
+	<p>
+		例一,点击按钮获取选中radio的值：在ng-repeat中的代码，对全局$scope里的变量是不可见的，在ng-repeat中访问全局变量是访问不到的，需要加上$parent
+	</p>
+	
+	<ul>
+		<li ng-repeat="item in dataR">
+			<label for="{{item.name}}">
+				<input type="radio" id='{{item.name}}' name='jxj' value="{{item.age}}" ng-model="$parent.selectValue" ng-click="bb(item)">{{item.name}}
+			</label>
+		</li>
+	</ul>
+	<button ng-click='aa()'>click me</button>
+
+	<ul>
+		<li ng-repeat="i in dataList">
+			{{$index}}.name:{{i.name}}
+			<ul>
+				<li ng-repeat="t in i.list">{{$parent.$index}} {{$index}}shuxu:{{t.shuxue}}</li>
+			</ul>
+		</li>
+	</ul>
+	
+</div>

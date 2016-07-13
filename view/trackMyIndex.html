@@ -1,0 +1,12 @@
+<div class="trackByIndex">
+	<p>
+		当ng-repeat 中循环collections中有相同的item就会报下面的错，用track by $index
+	</p>
+	<pre>
+angular.js:84 Error: [ngRepeat:dupes]
+
+	</pre>
+	<ul>
+		<li ng-repeat="item in dataList track by $index">{{item}}</li>
+	</ul>
+</div>
